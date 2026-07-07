@@ -1,25 +1,45 @@
 # Password Strength Checker
 
-## Task : 
-          - Analyzes the password input by user.
-          
-          - Categorizes the password in three categories: - Strong - Medium  -Weak
-          
-          - Highlights the requirements for a password to be : Strong.
+## Task
 
-## Technology Used: Python regex module
+* Analyzes a password entered by the user.
+* Classifies the password into one of three categories:
 
-## Code details:
+  * **Strong**
+  * **Medium**
+  * **Weak**
+* Explains the requirements for creating a **Strong** password.
 
-            - Password needs to be minimum of 12 characters otherwise user has to input the password again.
-            
-            - Strong Strength Password: - Atleast one small letter
-                                        - Atleast one capital letter
-                                        - Atleast one digit
-                                        - Atleast one special character
-                                        
-            - Medium Strength Password: - Atleast one small letter
-                                        - Atleast one capital letter
-                                        - Atleast one digit
+## Technology Used
 
-            - Weak Strength Password :  - Contains only small ,capital or just digits as password
+* Python
+* Regular Expressions (`re` module)
+
+## Code Details
+
+* The password must be at least **12 characters long**. If it is shorter, the user is prompted to enter a new password.
+
+### Strong Password Requirements
+
+A password is classified as **Strong** if it contains:
+
+* At least one lowercase letter
+* At least one uppercase letter
+* At least one digit
+* At least one special character
+
+### Medium Password Requirements
+
+A password is classified as **Medium** if it contains:
+
+* At least one lowercase letter
+* At least one uppercase letter
+* At least one digit
+
+### Weak Password
+
+A password is classified as **Weak** if it contains only one type of character, such as:
+
+* Only lowercase letters
+* Only uppercase letters
+* Only digits
